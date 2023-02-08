@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+    <header>
+
+<body style="background-color:powderblue;"></body>
+
+
+<div align="center">
+    <h1 style="color:red;">Congratulations! website has been deployed Successfully !!</h1>
+
+
+    <div align="center"></div>
+    <h1 style="color:blue;">Current Date and Time is:</h1>
+
+    <h1> <span id='day-date-time'></span>.</h1>
+
+
+    <h2>Machine URL is:
+
+        <script>
+            function getURL() {
+                alert("The URL of this page is: " + window.location.href);
+            }
+        </script>
+
+    </h2>
+
+
+
+    </header>
+
+
+    </head>
+
+    <body>
+
+        <p> Now go and Clean up the infra !  &#128512;  </p>
+
+    </body>
+
+</html>
+
+
+
+
+
+<script>
+    function updateDateTime() {
+        var dt = new Date();
+        var date = dt.toLocaleDateString();
+        var time = dt.toLocaleTimeString();
+        var day = dt.toString();
+        document.getElementById('day-date-time').innerHTML = dt;
+    }
+    setInterval(updateDateTime, 1000);
+</script>
+
+
